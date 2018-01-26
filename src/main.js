@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import superagent from 'superagent';
 
+import RedditSearch from './component/search-form.js'
+import SearchResults from './component/search-result-list.js'
+
 class App extends React.Component {
   constructor(props) {
   super(props);
@@ -29,8 +32,8 @@ getBoard(board,limit) {
     return (
       <div>
         <h1>Reddit Search</h1>
-        // <RedditSearch getBoard={this.getBoard} />
-        // <SearchResults posts={this.state.posts} board={this.state.board}/>
+        <RedditSearch getBoard={this.getBoard} />
+        <SearchResults posts={this.state.posts} board={this.state.board}/>
       </div>
     )
   }

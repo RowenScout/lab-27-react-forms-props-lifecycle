@@ -21,7 +21,7 @@ import React from 'react';
        this.setState({limit:event.target.value})
      }
    }
-   
+
    render() {
      return(
        <div>

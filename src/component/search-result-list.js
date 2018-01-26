@@ -10,7 +10,7 @@ class SearchResults extends React.Component {
         <h4>{this.props.board}</h4>
           <ul>
             {this.props.posts.map((post, index) => {
-              <li key={i}>
+              <li key={index}>
                 {post.data.title}
               </li>
             })}
